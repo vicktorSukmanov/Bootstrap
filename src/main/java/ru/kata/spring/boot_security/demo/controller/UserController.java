@@ -10,16 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import ru.kata.spring.boot_security.demo.model.Role;
 import ru.kata.spring.boot_security.demo.model.User;
 import ru.kata.spring.boot_security.demo.repository.RoleRepository;
-import ru.kata.spring.boot_security.demo.service.UserServiceImpl;
+
 
 import java.security.Principal;
 import java.util.List;
 
 @Controller
 public class UserController {
-
-    @Autowired
-    private UserServiceImpl userServiceImpl;
 
     @Autowired
     private UserDetailsService userDetailsService;
